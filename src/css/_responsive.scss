@@ -1,0 +1,33 @@
+@import "./styleVars.scss";
+
+@media (min-width: 1408px) {
+  @include styling($responsive: $rFullHD);
+}
+
+@media (min-width: 1216px) and (max-width: 1407px) {
+  @include styling($responsive: $rWideScreen);
+}
+
+@media (min-width: 1024px) and (max-width: 1215px) {
+  @include styling($responsive: $rDesktop);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  @include styling($responsive: $rTablet);
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+  @include styling($responsive: $rMobileXL);
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  @include styling($responsive: $rMobileL);
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  @include styling($responsive: $rMobileM);
+}
+
+@media (max-width: 320px) {
+  @include styling($responsive: $rMobileS);
+}
